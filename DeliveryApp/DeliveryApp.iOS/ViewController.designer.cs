@@ -18,22 +18,40 @@ namespace DeliveryApp.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton helloButton { get; set; }
+        UIKit.UITextField nameTextField { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField nameTextField { get; set; }
+        UIKit.UITextField passwordTextField { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton registerButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton signinButton { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (helloButton != null) {
-                helloButton.Dispose ();
-                helloButton = null;
-            }
-
             if (nameTextField != null) {
                 nameTextField.Dispose ();
                 nameTextField = null;
+            }
+
+            if (passwordTextField != null) {
+                passwordTextField.Dispose ();
+                passwordTextField = null;
+            }
+
+            if (registerButton != null) {
+                registerButton.Dispose ();
+                registerButton = null;
+            }
+
+            if (signinButton != null) {
+                signinButton.Dispose ();
+                signinButton = null;
             }
         }
     }

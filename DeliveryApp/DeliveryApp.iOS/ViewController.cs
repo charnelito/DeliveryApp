@@ -14,19 +14,8 @@ namespace DeliveryApp.iOS
         {
             base.ViewDidLoad();
 
-            helloButton.TouchUpInside += HelloButton_TouchUpInside;
         }
 
-        private void HelloButton_TouchUpInside(object sender, EventArgs e)
-        {
-            var alert = UIAlertController.Create("Hello", $"Hello {nameTextField.Text}", UIAlertControllerStyle.Alert);
-
-            var cancelAction = UIAlertAction.Create("Hello", UIAlertActionStyle.Cancel, null);
-
-            alert.AddAction(cancelAction);
-
-            PresentViewController(alert, true, null);
-        }
 
         public override void DidReceiveMemoryWarning()
         {
