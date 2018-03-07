@@ -31,6 +31,9 @@ namespace DeliveryApp.Droid
 
             registerButton.Click += RegisterButton_Click;
 
+            string email = Intent.GetStringExtra("email");
+            emailEditText.Text = email;
+
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
